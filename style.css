@@ -1,0 +1,257 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: #0a1f44;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00c3ff;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    height: 500px;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1581090700227-1e37b190418e') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding-top: 180px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 12px 25px;
+    background: #00c3ff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: #0099cc;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about {
+    padding: 70px 40px;
+    text-align: center;
+    background: white;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+/* FEATURES CARDS */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f1f1f1;
+    padding: 30px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* ===== SERVICES SECTION ===== */
+.services {
+    padding: 70px 40px;
+    text-align: center;
+    background: #eef3f8;
+}
+
+.services h1 {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.service-box {
+    background: white;
+    margin: 20px auto;
+    padding: 25px;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.service-box:hover {
+    transform: scale(1.03);
+}
+
+/* ===== BRAND LOGOS ===== */
+.brands {
+    padding: 60px;
+    text-align: center;
+    background: white;
+}
+
+.brands h2 {
+    margin-bottom: 30px;
+}
+
+.brand-logos img {
+    width: 120px;
+    margin: 20px;
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+.brand-logos img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact {
+    padding: 70px 40px;
+    text-align: center;
+    background: #0a1f44;
+    color: white;
+}
+
+.contact h1 {
+    margin-bottom: 40px;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    background: white;
+    color: black;
+    padding: 30px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.contact-card button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.whatsapp {
+    background: #25D366;
+}
+
+.email {
+    background: #007bff;
+}
+
+.location {
+    background: #ff5722;
+}
+
+.contact-card button:hover {
+    opacity: 0.85;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    .hero {
+        padding-top: 120px;
+        height: 400px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-box {
+        flex-direction: column;
+        align-items: center;
+    }
+}
